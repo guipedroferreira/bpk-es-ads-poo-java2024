@@ -39,14 +39,14 @@ public class Cidade {
     void aumentarPopulacao(float populacao){
         int valor = 100;
 
-        populacao += valor;
-        System.out.println("Populacao: " + populacao);
+        this.populacao += valor;
+        System.out.println("Populacao: " + this.populacao);
     }
 
     void diminuirPopulacao(float populacao){
         int valor = 100;
-        populacao -= valor;
-        System.out.println("Populacao: " + populacao);
+        this.populacao -= valor;
+        System.out.println("Populacao: " + this.populacao);
     }
 
     @Override

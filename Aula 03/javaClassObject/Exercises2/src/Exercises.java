@@ -224,22 +224,38 @@ public class Exercises {
 
     public static void ex12() {
         Filme filme = new Filme("Frozen", "Alguém", 90);
-        filme.iniciarFilme();
-        filme.pararFilme(filme.duracao);
 
         System.out.println(filme);
+        filme.setTitulo("Narnia");
+        System.out.println(filme.getTitulo());
+        filme.setDiretor("Fulano");
+        System.out.println(filme.getDiretor());
+        filme.setDuracao(120);
+        System.out.println(filme.getDuracao());
+        System.out.println(filme.toString());
+        filme.iniciarFilme();
+        filme.pararFilme(filme.getDuracao());
     }
 
     public static void ex13() {
         Time time = new Time("Flamengo", "Tite", 25);
-        time.adicionarJogadores(time.numDeJogadores);
-        time.removerJogadores(time.numDeJogadores);
+
+        System.out.println(time);
+        time.adicionarJogadores(time.getNumDeJogadores());
+        System.out.println(time.getNumDeJogadores());
+        time.removerJogadores(time.getNumDeJogadores());
+        System.out.println(time.getNumDeJogadores());
+        System.out.println(time.toString());
 
         System.out.println(time);
     }
 
     public static void ex14() {
         Jogo jogo = new Jogo("PES", "Arcade", 200);
+        System.out.println(jogo);
+        jogo.setPreco(250);
+        System.out.println(jogo.getPreco());
+        System.out.println(jogo);
         jogo.iniciarJogo();
         jogo.pausarJogo();
 
@@ -248,8 +264,14 @@ public class Exercises {
 
     public static void ex15() {
         Loja loja = new Loja("Nike", "USA", "99999999");
-        loja.abrirLoja(loja.nome);
-        loja.fecharLoja(loja.nome);
+
+        System.out.println(loja);
+        loja.setEndereco("Canada");
+        System.out.println(loja.getEndereco());
+        System.out.println(loja);
+        loja.abrirLoja(loja.getNome());
+        loja.fecharLoja(loja.getNome());
+
 
         System.out.println(loja);
     }

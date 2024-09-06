@@ -28,7 +28,7 @@ public class Main {
                     Exercises.ex4();
                     break;
                 case 5:
-
+                    Exercises.ex5();
                     break;
                 case 6:
                     Exercises.ex6();
